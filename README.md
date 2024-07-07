@@ -215,7 +215,7 @@ Deploy in simple web
 
 ```python
 1. git clone https://github.com/bayuzen19/DiamondPricePrediction.git
-2. pip install requirements.txt
+2. pip install -r requirements.txt
 3. python app.py
 4. open browser and write **localhost:5000/predict**
 ```
