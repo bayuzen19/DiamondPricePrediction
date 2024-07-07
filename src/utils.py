@@ -19,6 +19,15 @@ def save_object(file_path:str, obj:object):
 
     except Exception as e:
         raise CustomException(e,sys)
+
+def load_object(file_path:str) -> object:
+    try:
+        with open(file_path,'rb') as obj:
+            logging.info("Success to load processor or model")
+            return pickle.load(obj)
+    except Exception as e:
+        logging.info("Fail to load processor or model")
+        raise CustomException(e,sys)
     
 def evaluation(models:Dict[str,object],X_train:pd.DataFrame,X_test:pd.DataFrame,y_train:pd.Series,y_test:pd.Series) -> pd.DataFrame:
     results = []
