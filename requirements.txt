@@ -1,3 +1,9 @@
 pandas
+matplotlib
+seaborn
+numpy
 flask
+scikit-learn
+xgboost
+pickle
 -e .
