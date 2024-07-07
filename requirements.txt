@@ -5,5 +5,5 @@ numpy
 flask
 scikit-learn
 xgboost
-pickle
+yellowbrick
 -e .
